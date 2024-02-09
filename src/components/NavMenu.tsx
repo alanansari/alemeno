@@ -33,6 +33,12 @@ function AuthButton() {
   } else {
     return (
       <div className="bg-slate-900 mb-5 p-2 flex justify-end">
+        <Link
+          className="py-1 px-2 border rounded-lg text-sm flex items-center mr-auto"
+          href="/"
+        >
+          Home
+        </Link>
         <div className="w-fit flex items-center">Not signed in</div>
         <button className="border-2 rounded p-2 mx-10" onClick={() => signIn()}>
           Sign in

@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Alemeno Task
 
-## Getting Started
+## RUNNING THE SERVER
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```CMD
+git clone https://github.com/alanansari/alemeno.git
+```
+To run the server, you need to have NodeJS installed on your machine. If you don't have it installed, you can follow the instructions [here](https://nodejs.org/en//) to install it.
+
+
+
+2. Install the dependencies: 
+
+```CMD
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Setup .env file in base directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+NEXTAUTH_URL = "http://localhost:3000"
+NEXTAUTH_SECRET = "<next auth secret random string>"
 
-## Learn More
+GOOGLE_CLIENT_ID = "<smtp google oauth client id>"
+GOOGLE_CLIENT_SECRET = "<smtp google oauth client secret>"
 
-To learn more about Next.js, take a look at the following resources:
+DATABASE_URL="<postgres database url>"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Run the backend server on localhost:
 
-## Deploy on Vercel
+```CMD
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Run on localhost:3000 (default: 3000)

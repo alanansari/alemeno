@@ -1,5 +1,10 @@
 # Alemeno Task
-
+## Tech Stack Used
+- NextJS
+- Prisma
+- Postgres
+- NextAuth
+- TailwindCSS
 ## RUNNING THE SERVER
 
 1. Clone the repository:
